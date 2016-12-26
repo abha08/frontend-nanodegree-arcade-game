@@ -11,4 +11,4 @@ This game is all about a player who will cross the road to reach at water withou
 
 How To Play This Game
 =====================
-Oppen index.html or [click here]()
+Oppen index.html or [click here](frontend-nanodegree-arcade-game/index.html)
