@@ -7,8 +7,8 @@ For detailed instructions on how to get started, check out this [guide](https://
 
 Basic Functionality
 ===================
-This game is all about a player who will cross the road to reach at water without any collision with the bugs(enemies) moving there at different speed.the player can move up, down, left and right.The bugs can move at varying speed on the paved block portion of the screen.Once the player collide with the bugs the game is reset and player will set to its initial location.Once the player reached to water level, the game is won.
+This game is all about a *player* who will cross the road to reach at water without any collision with the *bugs(enemies)* moving there at different speed.the player can move up, down, left and right.The bugs can move at varying speed on the paved block portion of the screen.Once the player collide with the bugs the game is reset and player will set to its initial location.Once the player reached to water level, the game is won.
 
 How To Play This Game
 =====================
-Oppen index.html or [click here](https://github.com/abha08/frontend-nanodegree-arcade-game.git/index.html)
+Open index.html.
