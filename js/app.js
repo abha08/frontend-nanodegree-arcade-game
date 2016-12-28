@@ -29,12 +29,12 @@ Enemy.prototype.update = function (dt) {
     }
     else {
         this.x = -45;
-        this.speed = randomNumber(300, 500);
+        this.speed = Math.floor(Math.random() * (500 - 300 + 1) + 300);
     }
-    this.checkCollision({
+   if(this.checkCollision()) {
         alert("Oops !! Please try again");
         player.reset();
-    });
+    }
 };
 
 // Draw the enemy on the screen, required method for game
