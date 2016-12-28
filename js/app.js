@@ -12,7 +12,7 @@ var Enemy = function (x, y, sprite) {
 };
 
 // Check collisions between player and enemy
-Enemy.prototype.checkCollision = function() {
+Enemy.prototype.checkCollision = function(player) {
     return (player.x > this.x - this.hitBox.x / 2 &&
     player.x < this.x + this.hitBox.x / 2 &&
     player.y > this.y - this.hitBox.y / 2 &&
@@ -31,7 +31,7 @@ Enemy.prototype.update = function (dt) {
         this.x = -45;
         this.speed = Math.floor(Math.random() * (500 - 300 + 1) + 300);
     }
-   if(this.checkCollision()) {
+   if(this.checkCollision(player)) {
         alert("Oops !! Please try again");
         player.reset();
     }
