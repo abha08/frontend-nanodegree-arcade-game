@@ -1,36 +1,11 @@
-
-// Enemies our player must avoid
-var Enemy = function (x, y, sprite) {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-    this.x = x;
-    this.y = y;
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
-    this.sprite = 'images/enemy-bug.png';
-    this.speed =  Math.floor(Math.random() * (500 - 300 + 1) + 300);
-};
-
 // Check collisions between player and enemy
-Enemy.prototype.checkCollision = function(player) {
-    return (player.x > this.x - this.hitBox.x / 2 &&
-    player.x < this.x + this.hitBox.x / 2 &&
-    player.y > this.y - this.hitBox.y / 2 &&
-    player.y < this.y + this.hitBox.y / 2);
-};
-// Update the enemy's position, required method for game
-// Parameter: dt, a time delta between ticks
-Enemy.prototype.update = function (dt) {
-    // You should multiply any movement by the dt parameter
-    // which will ensure the game runs at the same speed for
-// Check collisions between player and enemy
+
 function checkCollision(enemy, player) {
     return (player.x > enemy.x - enemy.hitBox.x / 2 &&
     player.x < enemy.x + enemy.hitBox.x / 2 &&
     player.y > enemy.y - enemy.hitBox.y / 2 &&
     player.y < enemy.y + enemy.hitBox.y / 2);
 }
-
 // Enemies our player must avoid
 var Enemy = function (x, y, sprite) {
     // Variables applied to each of our instances go here,
